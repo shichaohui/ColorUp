@@ -51,9 +51,10 @@ cc.Class({
         this.node.on(cc.Node.EventType.TOUCH_START, this.player.jump, this.player);
 
 
-        wx.cloud.init();
-        
-        this._getUserInfo();
+        if (cc.sys.platform === cc.sys.WECHAT_GAME) {
+            wx.cloud.init();
+            this._getUserInfo();
+        }
 
     },
 
