@@ -1,6 +1,8 @@
 # ColorUp
 Cocos Creator 微信小游戏《七彩蹦蹦》
 
+[试玩 Web 版](https://shichaohui.github.io/game/ColorUp/web-desktop/index.html)
+
 ## 仅供学习交流，请勿商用。
 
 ## 功能
