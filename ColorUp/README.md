@@ -7,7 +7,6 @@ Cocos Creator 微信小游戏《七彩蹦蹦》 主域项目
 
 `build-templates` 目录下的内容会在构建时被自动复制到构建结果中。如 `build-templates/wechatgame` 中的内容会复制到构建微信小游戏生成的 `/wechatgame/` 目录中。
 
-* `wechatgame/ColorUpWXOpen` ：子域（开放数据域）项目构建结果，主域构建时复制到主域中作为小游戏开放数据目录。
 * `wechatgame/cloudfunction` ：云函数。
 * `wechatgame/project.config.json` ：项目配置（云函数目录），自动替换主域生成的 project.config.json 。
 
