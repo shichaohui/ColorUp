@@ -1,16 +1,8 @@
-cc.Class({
+var enter = {
 
-    extends: cc.Component,
+    init () {
 
-    properties: {
-
-    },
-
-    onLoad () {
-
-        let _self = this;
-
-        _self._getUserCloudStorage();
+        this._getUserCloudStorage();
 
         wx.onMessage(data => {
             if (!data) {
@@ -21,26 +13,21 @@ cc.Class({
                     window.userInfo = data.userInfo;
                     break;
                 case 'updateScore' :
-                    _self._updateScore(data.score);
+                    this._updateScore(data.score);
                     break;
                 case 'showFriendTopRanking' :
-                    _self._showFriendTopRanking();
+                    this._showFriendTopRanking();
                     break;
                 case 'showFriendRanking' :
-                    _self._showFriendRanking();
+                    this._showFriendRanking();
+                    break;
+                case 'close' :
+                    this._close();
                     break;
                 default:
                     break;
             }
         });
-
-    },
-
-    start () {
-
-    },
-
-    update (dt) {
 
     },
     
@@ -74,11 +61,25 @@ cc.Class({
     },
 
     _showFriendTopRanking () {
+        
         cc.director.loadScene('FriendTopRanking');
+
     },
 
     _showFriendRanking () {
+        
         cc.director.loadScene('FriendRanking');
+
     },
 
-});
+    _close () {
+
+        cc.director.loadScene("Empty");
+
+    },
+
+};
+
+if (cc.sys.platform == cc.sys.WECHAT_GAME) {
+    enter.init();
+}

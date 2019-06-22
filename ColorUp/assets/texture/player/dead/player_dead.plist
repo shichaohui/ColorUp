@@ -55,7 +55,9 @@
     <key>radialAcceleration</key>
     <integer>0</integer>
     <key>rotatePerSecond</key>
+    <string>rotatePerSecondVariance</string>
     <key>rotatePerSecondVariance</key>
+    <integer>0</integer>
     <key>rotationEnd</key>
     <integer>0</integer>
     <key>rotationEndVariance</key>
@@ -69,9 +71,9 @@
     <key>sourcePositionVariancey</key>
     <integer>0</integer>
     <key>sourcePositionx</key>
-    <integer>326</integer>
+    <real>373.7277526855469</real>
     <key>sourcePositiony</key>
-    <integer>652</integer>
+    <real>478.40472412109375</real>
     <key>speed</key>
     <integer>250</integer>
     <key>speedVariance</key>
@@ -100,11 +102,13 @@
     <integer>0</integer>
     <key>tangentialAcceleration</key>
     <integer>0</integer>
-    <key>textureImageData</key>
-    <string/>
+    <key>rotationIsDir</key>
+    <false/>
+    <key>minRadiusVariance</key>
+    <integer>0</integer>
     <key>emissionRate</key>
     <integer>999</integer>
-    <key>textureUuid</key>
-    <string>fc06825d-2231-43c3-bded-29845c8871d8</string>
+    <key>spriteFrameUuid</key>
+    <string>4e8bda52-d69e-47dc-9945-db8760876837</string>
   </dict>
 </plist>

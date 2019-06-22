@@ -101,6 +101,10 @@ cc.Class({
 
     playAgain () {
 
+        if (cc.sys.platform === cc.sys.WECHAT_GAME) {
+            wx.getOpenDataContext().postMessage({ type: 'close' });
+        }
+
         cc.director.loadScene('Game');
 
     },
@@ -108,12 +112,18 @@ cc.Class({
     showFriendRanking () {
         
         this.friendTopRankingWXSubContextView.enabled = false;
-        this.friendRankingNode.active = true;
-        this.friendRankingNode.on(cc.Node.EventType.TOUCH_START, () => {});
+
         if (!this.isLoadedFriendRanking) {
             wx.getOpenDataContext().postMessage({ type: 'showFriendRanking' });
             this.isLoadedFriendRanking = true;
         }
+
+        this.friendRankingNode.on(cc.Node.EventType.TOUCH_START, () => {});
+
+        // 延时显示，等待子域切换场景
+        this.friendRankingNode.active = true;
+        this.friendRankingNode.opacity = 0;
+        this.scheduleOnce(((dt) => this.friendRankingNode.opacity = 255), 0.1);
 
     },
 

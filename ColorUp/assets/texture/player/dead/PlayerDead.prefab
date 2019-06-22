@@ -67,7 +67,6 @@
     },
     "_skewX": 0,
     "_skewY": 0,
-    "_zIndex": 0,
     "groupIndex": 0,
     "_id": ""
   },
@@ -81,13 +80,14 @@
     "_enabled": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_custom": {
-      "custom": false
+    "_custom": true,
+    "_file": null,
+    "_spriteFrame": {
+      "__uuid__": "4e8bda52-d69e-47dc-9945-db8760876837"
     },
-    "_file": {
-      "__uuid__": "c351cf37-208e-4476-a3d8-5a5560aaff76"
+    "_texture": {
+      "__uuid__": "fc06825d-2231-43c3-bded-29845c8871d8"
     },
-    "_spriteFrame": null,
     "_stopped": true,
     "playOnLoad": true,
     "autoRemoveOnFinish": true,
@@ -162,7 +162,7 @@
     "startRadiusVar": 0,
     "endRadius": 0,
     "endRadiusVar": 0,
-    "rotatePerS": 0,
+    "rotatePerS": "rotatePerSecondVariance",
     "rotatePerSVar": 0,
     "_N$preview": true,
     "_id": ""
