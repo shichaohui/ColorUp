@@ -29,8 +29,3 @@ Cocos Creator 微信小游戏《七彩蹦蹦》
 [主域构建发布](./ColorUp/README.md)
 
 [子域构建发布](./ColorUpWXOpen/README.md)
-
-## 《七彩蹦蹦》体验版
-
-![QRCode](./ReadmeImage/qrcode.jpg)
-
