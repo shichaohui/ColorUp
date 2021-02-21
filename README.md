@@ -1,7 +1,7 @@
 # ColorUp
 Cocos Creator 微信小游戏《七彩蹦蹦》
 
-[试玩 Web 版](https://shichaohui.github.io/game/ColorUp/web-desktop/index.html)
+[试玩 Web 版](https://shichaohui.github.io/games/ColorUp/index.html)
 
 ## 仅供学习交流，请勿商用。
 
@@ -31,3 +31,9 @@ Cocos Creator 微信小游戏《七彩蹦蹦》
 [主域构建发布](./ColorUp/README.md)
 
 [子域构建发布](./ColorUpWXOpen/README.md)
+
+<div>
+    <img src="https://shichaohui.github.io/images/wechat-appreciate-code.png" width="33%"/>
+    <img src="https://shichaohui.github.io/images/wechat-appreciate-code.png" width="33%"/>
+    <img src="https://shichaohui.github.io/images/wechat-appreciate-code.png" width="33%"/>
+</div>
