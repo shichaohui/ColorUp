@@ -32,7 +32,7 @@ Cocos Creator 微信小游戏《七彩蹦蹦》
 
 [子域构建发布](./ColorUpWXOpen/README.md)
 
-
 ## 赏
+
 | <img src="https://shichaohui.github.io/images/wechat-appreciate-code.png"/> | <img src="https://shichaohui.github.io/images/wechat-appreciate-code.png"/> | <img src="https://shichaohui.github.io/images/wechat-appreciate-code.png"/> |
 |  ----  | ----  | ----  |
